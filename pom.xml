@@ -15,20 +15,20 @@
     <description>spring-boot-tutorial</description>
     <properties>
         <java.version>17</java.version>
+        <springsecurity.version>4.2.1.RELEASE</springsecurity.version>
+        <springoauth2.version>2.0.3.RELEASE</springoauth2.version>
+        <spring.boot.version>2.0.3.RELEASE</spring.boot.version>
         <fabric8.generator.from>registry.access.redhat.com/openjdk/openjdk-11-rhel7:latest</fabric8.generator.from>
     </properties>
     <dependencies>
+        <!-- Spring -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <version>3.1.2</version>
         </dependency>
     </dependencies>
+
 
     <build>
         <plugins>
