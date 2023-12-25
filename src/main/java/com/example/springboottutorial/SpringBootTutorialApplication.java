@@ -17,7 +17,7 @@ public class SpringBootTutorialApplication {
     @GetMapping("/api/hello")
     public String sayHello(@RequestParam(value = "name", defaultValue = "World") String name){
 
-        return String.format("Hello yang saya hormati %s!", name);
+        return String.format("Hello yang saya hormati %s asal dari medan!", name);
     }
 
 }
